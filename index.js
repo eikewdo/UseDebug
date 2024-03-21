@@ -7,20 +7,20 @@ function iniciarServidor() {
       if (error) {
           console.error(`Erro ao iniciar servidor: ${error}`);
           return;
-      }
+      };
   });
-}
+} 
 
 const app = express();
 
 app.use(express.json());
 
 // Iniciando o servidor
-iniciarServidor();
+//iniciarServidor();
 
 app.use(routers);
 
-const PORT = '3000O';
+const PORT = '3000';
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
